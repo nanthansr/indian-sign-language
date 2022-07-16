@@ -1,0 +1,152 @@
+<head>
+    <style>
+        header{
+            background-color: aquamarine;
+            font-size: 30px;
+            text-align: center;
+        }
+        nav{
+            background-color:azure;
+            font-size: 25px;
+        }
+        a {
+display: inline-block;
+width: 80px;
+text-align: center; 
+text-decoration: none;
+}
+li {
+    width: 100px;
+    margin: auto;
+    display: inline;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+     }
+     body{
+        background-color:cornsilk;
+        align-content: center;
+    }
+    .t {
+        
+    text-align: center;
+    background-color: lightgrey;
+  width: 1000px;
+  height: 1000px;
+  border: 8px solid green;
+  padding: 30px;
+  margin: 20px;
+
+}
+p{
+    font-size: 25px;
+}
+.dropbtn {
+  padding: 16px;
+  border: none;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { color: black;}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.i{
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+    </style>
+</head>
+<body>
+    <nav><ul>
+        <li><a href="home.html" >Home </a></li>
+        <li><a href="news.html"> News </a></li>
+        <li><a href="page.html">Content</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="#"; style="font-size: 15px;">Indian Sign Language</a>
+                <a href="#"; style="font-size: 15px;">History</a>
+                <a href="#"; style="font-size: 15px;">Our purpose</a>
+            </div>
+            <li><a href="#"> Contact </a></li>
+          </div></li>
+        </ul></nav><br>
+        <header>INDIAN SIGN LANGUAGE </header>
+        <section>
+        <center><div class="t"> <p style="font-size: 30px; font-family: bold,times new roman;">Welcome to Indian Sign Language Portal</p> <br> <br><p>Indiansignlanguage.org offers a huge collection of Indian Sign Language (ISL) signs. Each sign has an image, running video and threaded discussions. It is an ideal resource to use while you learn/teach Indian Sign Language.  Each sign has an image, running video and threaded discussions.  We are continually adding more signs and designing new services to empower the Deaf.
+            Please share your ideas and comments and help us make this service better.</p> 
+            <article><iframe width="420" height="345" src="https://www.youtube.com/embed/xwGHOUcnnHU">
+            </iframe>
+            <br><p><a href="page.html" id="i">CLICK </a>HERE TO LEARN ALPHABETS</p>
+            </article>
+        </section>
+        </div></center>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+</body>

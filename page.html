@@ -1,0 +1,180 @@
+<head>
+    <style>
+        header{
+            background-color: aquamarine;
+            font-size: 30px;
+            text-align: center;
+        }
+        nav{
+            background-color:azure;
+            font-size: 25px;
+        }
+        a {
+display: inline-block;
+width: 80px;
+text-align: center; 
+text-decoration: none;
+}
+li {
+    width: 100px;
+    margin: auto;
+    display: inline;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+     }
+    body{
+        background-color:cornsilk;
+        align-content: center;
+    }
+    .t {
+        
+    text-align: center;
+    background-color: lightgrey;
+  width: 1000px;
+  height: 1000px;
+  border: 8px solid green;
+  padding: 30px;
+  margin: 20px;
+
+}
+.dropbtn {
+  padding: 16px;
+  border: none;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { color: black;}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <nav><ul>
+        <li><a href="home.html" >Home </a></li>
+        <li><a href="news.html"> News </a></li>
+         <li><a href="page.html">Content</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="#"; style="font-size: 15px;">Indian Sign Language</a>
+                <a href="#"; style="font-size: 15px;">History</a>
+                <a href="#"; style="font-size: 15px;">Our purpose</a>
+            </div>        
+            <li><a href="#"> Contact </a></li>          
+        </ul></nav><br>
+        <header>INDIAN SIGN LANGUAGE </header>
+        <center><div class="t">
+          <h1>ALPHABETS OF INDIAN SIGN LANGUAGE</h1>
+          <br><br>
+          <img src="isl.jpg"/><br><br>
+          <form>
+           <p> Search the word here : <input type="search" id="SEARCH1" name="word"></p>
+            </form>
+            <button onclick="getValue()">Get Video</button>
+            
+            </iframe>
+            <p id="Sample"></p>
+            <script>
+               function getValue() {
+                  var t = document.getElementById("SEARCH1").value;
+                  if(t=="thankyou")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/-lek77YgQJ8";
+                  }
+                  if(t=="air")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/TCVL5eO8ZWY";
+                  }
+                  if(t=="break")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/G9xsutdVO1Y";
+                  }
+                  if(t=="beat")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/ACG-PK-VYCs";
+                  }
+                  if(t=="school")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/rohE_zLsZD8";
+                  }
+                  if(t=="sun")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/ftF3qfLi1a4";
+                  }
+                  if(t=="us")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/s03cEA_B2WE";
+                  }
+                  if(t=="woman")
+                  {
+                    document.getElementById("myvid").src="https://www.youtube.com/embed/HmYwzlpB-_4";
+                  }
+               }
+            </script>
+            <iframe id="myvid" width="600" height="400" frameborder="0" src=""></iframe>
+        </div></center>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            </body>
